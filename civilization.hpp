@@ -1,5 +1,5 @@
-#ifndef COMPUTADORA_HPP
-#define COMPUTADORA_HPP
+#ifndef CIVILIZATION_HPP
+#define CIVILIZATION_HPP
 
 #include <string>
 
