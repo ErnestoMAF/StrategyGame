@@ -46,6 +46,18 @@ class Civilization
         int getPuntuacion() {
             return puntuacion;
         }
+
+        friend istream& operator>>(istream& is, Civilization& civilization) {
+            cout << "Name: ";
+            getline(cin, civilization.nombre);
+            cout << "X Location: ";
+            cin >> civilization.loc_x;
+            cout << "Y Location: ";
+            cin >> civilization.loc_y;
+            cout << "Puntuation: ";
+            cin >> civilization.puntuacion;
+            return is;
+        }
 };
 
 #endif
